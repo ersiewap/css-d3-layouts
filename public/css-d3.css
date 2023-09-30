@@ -222,6 +222,40 @@ section#grid-layout
     grid-row: 3 / 6;
     grid-column: 4 / 3;
 }
+
+.container-area {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "area-1 area-1 area-1 area-1 area-1"
+    "area-2 area-3 area-3 area-3 area-4" 
+    "area-2 area-3 area-3 area-3 area-4"
+    "area-2 area-3 area-3 area-3 area-4"
+    "area-5 area-5 area-5 area-5 area-4"
+    ;
+.area-1 {
+    grid-area: area-1;
+    border-radius: 2rem;
+}
+.area-2 {
+    grid-area: area-2;
+    border-radius: 2rem;
+}
+.area-3 {
+    grid-area: area-3;
+    border-radius: 2rem;
+}
+.area-4 {
+    grid-area: area-4;
+    border-radius: 2rem;
+}
+.area-5 {
+    grid-area: area-5;
+    border-radius: 2rem;
+}
+
 /* GRID ALIGN */
 
 /* GRID TEMPLATING */
